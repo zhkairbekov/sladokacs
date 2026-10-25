@@ -1,0 +1,23 @@
+{
+  "name": "SLADOKACS (Куся) — Официальный сайт",
+  "short_name": "SLADOKACS",
+  "description": "Официальная страница-визитка Twitch-стримерши Куси (sladokacs): все ссылки, меню донатов, расписание и сетап.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0d0b12",
+  "theme_color": "#ffa3ee",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "https://static-cdn.jtvnw.net/jtv_user_pictures/7d12ff8d-f008-42e0-8515-b2c18b76095a-profile_image-300x300.png",
+      "sizes": "300x300",
+      "type": "image/png"
+    }
+  ]
+}

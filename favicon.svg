@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1a1326" />
+      <stop offset="100%" stop-color="#0d0b12" />
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="10" y1="12" x2="54" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffc2f4" />
+      <stop offset="50%" stop-color="#ffa3ee" />
+      <stop offset="100%" stop-color="#ff55df" />
+    </linearGradient>
+  </defs>
+
+  <!-- Скругленный темный фон с неоновой рамкой -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bgGrad)" stroke="url(#pinkGrad)" stroke-width="3.5" />
+
+  <!-- Милый фирменный бантик ୨୧ / сердечко в центре -->
+  <path
+    d="M32 29C27.5 20.5 14 17 14 27.5C14 35.5 25.5 36.5 32 32.5C38.5 36.5 50 35.5 50 27.5C50 17 36.5 20.5 32 29Z"
+    fill="url(#pinkGrad)"
+  />
+  <!-- Ленточки бантика снизу -->
+  <path
+    d="M29 33L20 48L26.5 46.5L31 36.5L29 33ZM35 33L44 48L37.5 46.5L33 36.5L35 33Z"
+    fill="url(#pinkGrad)"
+  />
+  <!-- Центральный узелок бантика -->
+  <circle cx="32" cy="31.5" r="4.2" fill="#ffffff" />
+
+  <!-- Маленькая искорка сверху справа -->
+  <path d="M49 11L50.4 14.6L54 16L50.4 17.4L49 21L47.6 17.4L44 16L47.6 14.6L49 11Z" fill="#ffd166" />
+</svg>
