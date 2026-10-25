@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kairbekoff-sladokacs.netlify.app/sitemap.xml
+Sitemap: https://sladokacs.netlify.app/sitemap.xml
