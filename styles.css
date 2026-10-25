@@ -543,40 +543,46 @@ body {
 .panels-showcase {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-  gap: 20px;
-  margin-bottom: 30px;
+  gap: 22px;
+  margin-bottom: 34px;
   align-items: start;
+  justify-content: center;
 }
 
 .panel-art-card {
-  background: rgba(34, 21, 38, 0.9);
+  background: rgba(34, 21, 38, 0.92);
   border: 2.5px solid #ffb8d9;
   border-radius: 22px;
-  padding: 10px 10px 14px;
+  padding: 12px 12px 14px;
   text-decoration: none;
   color: var(--cream-soft);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   box-shadow: 0 6px 0 var(--berry-stroke), 0 14px 30px rgba(0, 0, 0, 0.4);
-  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
   cursor: pointer;
-  overflow: hidden;
+  max-width: 340px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .panel-art-card:hover {
-  transform: translateY(-5px) rotate(-0.5deg);
-  box-shadow: 0 9px 0 var(--berry-stroke), 0 20px 36px rgba(255, 148, 194, 0.28);
+  transform: translateY(-5px);
+  border-color: #ffd6e8;
+  box-shadow: 0 9px 0 var(--berry-stroke), 0 20px 36px rgba(255, 148, 194, 0.35);
 }
 
 .panel-art-card img {
   width: 100%;
   height: auto;
-  display: block;
+  max-width: 100%;
   object-fit: contain;
+  display: block;
   border-radius: 16px;
   border: 1.5px solid rgba(255, 214, 232, 0.35);
+  background: rgba(20, 12, 23, 0.5);
 }
 
 .panel-art-caption {
@@ -1038,11 +1044,8 @@ body {
 }
 
 .setup-banner-col .panel-art-card img {
-  width: 100%;
   height: auto;
-  max-height: none;
-  display: block;
-  object-fit: contain;
+  max-height: 320px;
 }
 
 @media (max-width: 900px) {
@@ -1115,7 +1118,6 @@ body {
 .top-donor-photo img {
   width: 100%;
   height: auto;
-  display: block;
   object-fit: contain;
 }
 
