@@ -141,4 +141,147 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     { passive: true }
   );
+
+  // 6. Динамическая синхронизация данных с Twitch (био, фолловеры, статус эфира)
+  async function syncTwitchChannel() {
+    const CHANNEL_LOGIN = 'sladokacs';
+    const GQL_URL = 'https://gql.twitch.tv/gql';
+    const CLIENT_ID = 'kimne78kx3ncx6brgo4mv6wki5h1ko';
+
+    const bioEl = document.getElementById('twitch-bio');
+    const followersEl = document.getElementById('twitch-followers-count');
+    const targetEl = document.getElementById('twitch-followers-target');
+    const barEl = document.getElementById('twitch-followers-bar');
+    const avatarEl = document.getElementById('twitch-avatar');
+    const statusBadge = document.getElementById('twitch-status-badge');
+    const statusText = document.getElementById('twitch-status-text');
+    const liveBanner = document.getElementById('live-stream-banner');
+    const liveTitle = document.getElementById('live-stream-title');
+    const liveMeta = document.getElementById('live-stream-meta');
+
+    function updateFollowersUI(count) {
+      if (!followersEl) return;
+      followersEl.textContent = count.toLocaleString('ru-RU');
+      if (barEl) {
+        const target = parseInt(targetEl?.textContent, 10) || 1000;
+        const percent = Math.min(100, Math.max(0, (count / target) * 100)).toFixed(1);
+        barEl.style.width = `${percent}%`;
+      }
+    }
+
+    try {
+      const gqlQuery = {
+        operationName: 'TwitchLiveChannelSync',
+        variables: { channel: CHANNEL_LOGIN },
+        query: `
+          query TwitchLiveChannelSync($channel: String!) {
+            user(login: $channel) {
+              id
+              displayName
+              description
+              profileImageURL(width: 300)
+              followers {
+                totalCount
+              }
+              stream {
+                id
+                title
+                viewersCount
+                game {
+                  name
+                }
+              }
+            }
+          }
+        `,
+      };
+
+      const response = await fetch(GQL_URL, {
+        method: 'POST',
+        headers: {
+          'Client-Id': CLIENT_ID,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify([gqlQuery]),
+      });
+
+      if (!response.ok) throw new Error(`HTTP error ${response.status}`);
+
+      const [payload] = await response.json();
+      const user = payload?.data?.user;
+      if (!user) throw new Error('User data not found in Twitch response');
+
+      // 1. Описание профиля / Био
+      if (user.description && bioEl) {
+        bioEl.textContent = user.description;
+      }
+
+      // 2. Аватарка (если обновилась)
+      if (user.profileImageURL && avatarEl && avatarEl.src !== user.profileImageURL) {
+        avatarEl.src = user.profileImageURL;
+      }
+
+      // 3. Фолловеры и прогресс-бар цели
+      if (typeof user.followers?.totalCount === 'number') {
+        updateFollowersUI(user.followers.totalCount);
+      }
+
+      // 4. Прямой эфир (онлайн / оффлайн)
+      if (user.stream) {
+        // Стрим идёт прямо сейчас
+        if (statusBadge) {
+          statusBadge.classList.add('is-live');
+          statusBadge.classList.remove('is-offline');
+        }
+        if (statusText) {
+          statusText.textContent = 'В ЭФИРЕ 🔴';
+        }
+        if (liveBanner) {
+          if (liveTitle) {
+            liveTitle.textContent = user.stream.title || 'Стрим Куси прямо сейчас!';
+          }
+          if (liveMeta) {
+            const gameName = user.stream.game?.name || 'Counter-Strike 2';
+            const viewers = user.stream.viewersCount || 0;
+            liveMeta.textContent = `🎮 ${gameName} • ${viewers} зрителей`;
+          }
+          liveBanner.style.display = 'flex';
+        }
+      } else {
+        // Канал оффлайн
+        if (statusBadge) {
+          statusBadge.classList.remove('is-live');
+          statusBadge.classList.add('is-offline');
+        }
+        if (statusText) {
+          statusText.textContent = 'ОФФЛАЙН';
+        }
+        if (liveBanner) {
+          liveBanner.style.display = 'none';
+        }
+      }
+    } catch (err) {
+      console.warn('Twitch GQL Sync error, falling back to DecAPI:', err);
+
+      // Резервный канал (DecAPI) на случай блокировок или сбоев GQL
+      try {
+        const fallbackRes = await fetch(`https://decapi.me/twitch/followcount/${CHANNEL_LOGIN}`);
+        if (fallbackRes.ok) {
+          const countText = await fallbackRes.text();
+          const count = parseInt(countText.trim(), 10);
+          if (!isNaN(count) && count > 0) {
+            updateFollowersUI(count);
+          }
+        }
+      } catch (fallbackErr) {
+        console.warn('DecAPI fallback failed:', fallbackErr);
+      }
+    }
+  }
+
+  // Запуск синхронизации сразу при загрузке страницы
+  syncTwitchChannel();
+
+  // Периодическая проверка каждые 60 секунд (если вкладка открыта)
+  setInterval(syncTwitchChannel, 60000);
 });

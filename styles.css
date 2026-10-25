@@ -234,33 +234,133 @@ body {
   bottom: -6px;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(135deg, #ff477e, #e01e5a);
-  color: #fff;
+  background: rgba(35, 22, 38, 0.92);
+  color: #ffcfe3;
   font-size: 0.72rem;
   font-weight: 900;
   padding: 4px 13px;
   border-radius: 999px;
-  border: 2px solid #fff0f5;
+  border: 2px solid #ffb8d9;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  box-shadow: 0 4px 12px rgba(255, 0, 85, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
+  transition: all 0.35s ease;
+}
+
+.status-badge.is-live {
+  background: linear-gradient(135deg, #ff1744, #e01e5a);
+  color: #fff;
+  border-color: #fff0f5;
+  box-shadow: 0 0 18px rgba(255, 23, 68, 0.85);
 }
 
 .status-dot {
-  width: 7px;
-  height: 7px;
-  background: #fff;
+  width: 8px;
+  height: 8px;
+  background: #ffb8d9;
   border-radius: 50%;
-  animation: pulse 1.5s infinite;
+  transition: background-color 0.35s ease;
 }
 
-@keyframes pulse {
+.status-badge.is-live .status-dot {
+  background: #fff;
+  box-shadow: 0 0 8px #fff;
+  animation: live-pulse 1.1s infinite;
+}
+
+@keyframes live-pulse {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(1.3); }
+  50% { opacity: 0.4; transform: scale(1.4); }
+}
+
+/* Живой баннер стрима */
+.live-stream-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  background: linear-gradient(135deg, rgba(255, 23, 68, 0.2), rgba(64, 18, 38, 0.85));
+  border: 2px solid #ff477e;
+  border-radius: 20px;
+  padding: 12px 20px;
+  margin: 18px auto 0;
+  max-width: 620px;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(255, 23, 68, 0.35);
+  animation: banner-float 3s ease-in-out infinite alternate;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.live-stream-banner:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 12px 30px rgba(255, 23, 68, 0.55);
+  border-color: #ffa3c5;
+}
+
+.live-pulse-badge {
+  background: #ff1744;
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 900;
+  padding: 5px 12px;
+  border-radius: 999px;
+  box-shadow: 0 0 10px rgba(255, 23, 68, 0.9);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.live-banner-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.live-banner-info strong {
+  font-size: 0.94rem;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.live-banner-info span {
+  font-size: 0.8rem;
+  color: #ffd6e8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.live-join-btn {
+  background: #ff477e;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.82rem;
+  padding: 7px 15px;
+  border-radius: 12px;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(255, 71, 126, 0.4);
+  transition: background 0.2s ease;
+}
+
+.live-stream-banner:hover .live-join-btn {
+  background: #ff1744;
+}
+
+@keyframes banner-float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-4px); }
 }
 
 /* Объемный баббл-заголовок как на картинках Куси ("СОЦСЕТИ", "МОЙ СЕТАП") */

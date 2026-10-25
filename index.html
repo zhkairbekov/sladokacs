@@ -202,16 +202,17 @@
           src="https://static-cdn.jtvnw.net/jtv_user_pictures/7d12ff8d-f008-42e0-8515-b2c18b76095a-profile_image-300x300.png"
           alt="sladokacs аватар"
           class="avatar-img"
+          id="twitch-avatar"
         />
-        <span class="status-badge">
-          <span class="status-dot"></span> TWITCH
+        <span class="status-badge" id="twitch-status-badge">
+          <span class="status-dot" id="twitch-status-dot"></span> <span id="twitch-status-text">TWITCH</span>
         </span>
       </div>
 
       <div class="cloud-title-wrap">
         <h1 class="hero-title">sladokacs</h1>
       </div>
-      <p class="hero-subtitle">Привет! Я начинающий стример, а ты солнышко! ☀️</p>
+      <p class="hero-subtitle" id="twitch-bio">Привет! Я начинающий стример, а ты солнышко! ☀️</p>
 
       <div class="hero-tags">
         <span class="tag">🎯 Counter-Strike 2</span>
@@ -241,6 +242,16 @@
         </a>
       </div>
 
+      <!-- Динамический живой баннер (появляется только когда Куся в прямом эфире) -->
+      <a href="https://www.twitch.tv/sladokacs" target="_blank" rel="noopener noreferrer" class="live-stream-banner" id="live-stream-banner" style="display: none;">
+        <span class="live-pulse-badge">🔴 В ЭФИРЕ</span>
+        <div class="live-banner-info">
+          <strong id="live-stream-title">Куся запустила стрим!</strong>
+          <span id="live-stream-meta">🎮 Counter-Strike 2 • 0 зрителей</span>
+        </div>
+        <span class="live-join-btn">Смотреть ➔</span>
+      </a>
+
       <!-- Цели на канале с оригинальными рисованными SVG-иконками с Твича Куси -->
       <div class="goals-grid">
         <div class="goal-card">
@@ -257,10 +268,10 @@
             <div class="goal-info">
               <div class="goal-header">
                 <span class="goal-title">сделаю розыгрыш скинов :3</span>
-                <span class="goal-count"><strong>560</strong> / 1000 Фолловеры</span>
+                <span class="goal-count"><strong id="twitch-followers-count">561</strong> / <span id="twitch-followers-target">1000</span> Фолловеры</span>
               </div>
               <div class="progress-track">
-                <div class="progress-fill" style="width: 56%;"></div>
+                <div class="progress-fill" id="twitch-followers-bar" style="width: 56.1%;"></div>
               </div>
             </div>
           </div>
