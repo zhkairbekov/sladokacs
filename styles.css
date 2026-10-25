@@ -1384,8 +1384,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #110e14;
-  border: 1px solid rgba(197, 168, 128, 0.4);
   flex-shrink: 0;
   transition: transform 0.25s ease;
 }
