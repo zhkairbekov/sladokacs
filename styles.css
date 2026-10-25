@@ -542,9 +542,10 @@ body {
 /* ВИТРИНА ОРИГИНАЛЬНЫХ ПАНЕЛЕЙ КУСИ С ТВИЧА */
 .panels-showcase {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 20px;
   margin-bottom: 30px;
+  align-items: start;
 }
 
 .panel-art-card {
@@ -571,9 +572,9 @@ body {
 
 .panel-art-card img {
   width: 100%;
-  height: 330px;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
+  display: block;
+  object-fit: contain;
   border-radius: 16px;
   border: 1.5px solid rgba(255, 214, 232, 0.35);
 }
@@ -1037,8 +1038,11 @@ body {
 }
 
 .setup-banner-col .panel-art-card img {
+  width: 100%;
   height: auto;
-  max-height: 320px;
+  max-height: none;
+  display: block;
+  object-fit: contain;
 }
 
 @media (max-width: 900px) {
@@ -1109,7 +1113,10 @@ body {
 }
 
 .top-donor-photo img {
-  height: 310px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 @media (max-width: 880px) {
