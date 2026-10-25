@@ -8,7 +8,7 @@
   <meta name="keywords" content="sladokacs, sladoka, SLAD0KA, Куся, Куся твич, стримерша кс2, девушка играет в кс2, twitch sladokacs, foxywoxo, стример Бишкек, стримерша Кыргызстан, counter-strike 2" />
   <meta name="author" content="sladokacs (Куся)" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="theme-color" content="#0d0b12" />
+  <meta name="theme-color" content="#1a1118" />
   <link rel="canonical" href="https://kairbekoff-sladokacs.netlify.app/" />
 
   <!-- Open Graph / Превью для Telegram, Discord, VK -->
@@ -18,17 +18,15 @@
   <meta property="og:site_name" content="SLADOKACS — Куся" />
   <meta property="og:title" content="୨୧ SLADOKACS (Куся) — Стримерша по CS2 и соло-играм" />
   <meta property="og:description" content="Привет! Я Куся, а ты солнышко ☀️ Тут все мои ссылки (Twitch, ТГ, Steam, Faceit), прайс-лист донатов, сетап ПК и зал славы комьюнити." />
-  <meta property="og:image" content="https://static-cdn.jtvnw.net/jtv_user_pictures/7d12ff8d-f008-42e0-8515-b2c18b76095a-profile_image-300x300.png" />
-  <meta property="og:image:width" content="300" />
-  <meta property="og:image:height" content="300" />
-  <meta property="og:image:alt" content="Аватар стримерши sladokacs (Куся)" />
+  <meta property="og:image" content="https://kairbekoff-sladokacs.netlify.app/assets/panels/panel-links.png" />
+  <meta property="og:image:alt" content="Стримерша sladokacs (Куся)" />
   <meta property="profile:username" content="sladokacs" />
 
   <!-- Twitter / X Card -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="୨୧ SLADOKACS (Куся) — Twitch стримерша по CS2" />
   <meta name="twitter:description" content="Все ссылки Куси (sladokacs): Twitch, Telegram, Steam, Faceit, меню донатов, расписание и игровой сетап." />
-  <meta name="twitter:image" content="https://static-cdn.jtvnw.net/jtv_user_pictures/7d12ff8d-f008-42e0-8515-b2c18b76095a-profile_image-300x300.png" />
+  <meta name="twitter:image" content="https://kairbekoff-sladokacs.netlify.app/assets/panels/panel-links.png" />
 
   <!-- Иконки и манифест -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -115,13 +113,14 @@
     ]
   }
   </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Inter:wght@400;500;600;700;800&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Декоративный фон -->
+  <!-- Декоративный фон с мягким розово-кремовым свечением и звездочками -->
   <div class="bg-orb orb-1"></div>
   <div class="bg-orb orb-2"></div>
   <div class="bg-orb orb-3"></div>
@@ -132,8 +131,10 @@
     <a href="#" class="nav-brand"><span>୨୧</span> SLADOKACS</a>
     <ul class="nav-links">
       <li><a href="#links" class="nav-spy active">Ссылки</a></li>
+      <li><a href="#donate-menu" class="nav-spy">Прайс & Алерты</a></li>
       <li><a href="#about" class="nav-spy">Обо мне & FAQ</a></li>
       <li><a href="#setup" class="nav-spy">Сетап</a></li>
+      <li><a href="#community" class="nav-spy">Зал славы</a></li>
     </ul>
   </nav>
 
@@ -147,6 +148,12 @@
         <rect x="3" y="14" width="7" height="7" rx="2"></rect>
       </svg>
       <span>Ссылки</span>
+    </a>
+    <a href="#donate-menu" class="mobile-nav-item nav-spy">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+      </svg>
+      <span>Прайс</span>
     </a>
     <a href="#about" class="mobile-nav-item nav-spy">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
@@ -163,11 +170,32 @@
       </svg>
       <span>Сетап</span>
     </a>
+    <a href="#community" class="mobile-nav-item nav-spy">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+        <path d="M4 22h16"></path>
+        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+      </svg>
+      <span>Зал славы</span>
+    </a>
   </nav>
 
   <main class="container">
-    <!-- HERO БЛОК -->
-    <header class="hero">
+    <!-- HERO БЛОК С ЭСТЕТИКОЙ КАРТОЧЕК КУСИ (БАНТИК, КОТИК, ЗАЙКА, ЗВЕЗДОЧКИ) -->
+    <header class="hero kawaii-frame">
+      <!-- Фирменный рисованный розовый бантик в углу как на панелях Куси -->
+      <div class="corner-bow" aria-hidden="true">
+        <svg viewBox="0 0 80 80" fill="none">
+          <path d="M40 34C30 16 8 12 10 29C12 42 29 41 40 38C51 41 68 42 70 29C72 12 50 16 40 34Z" fill="#ff9ec9" stroke="#6d213c" stroke-width="3"/>
+          <path d="M35 38L16 66L28 62L38 43L35 38ZM45 38L64 66L52 62L42 43L45 38Z" fill="#ff85b8" stroke="#6d213c" stroke-width="3" stroke-linejoin="round"/>
+          <circle cx="40" cy="36" r="6" fill="#ffd6e8" stroke="#6d213c" stroke-width="3"/>
+        </svg>
+      </div>
+      <div class="floating-sparkles" aria-hidden="true">✦ ♡ ✧</div>
+
       <div class="avatar-wrapper">
         <img
           src="https://static-cdn.jtvnw.net/jtv_user_pictures/7d12ff8d-f008-42e0-8515-b2c18b76095a-profile_image-300x300.png"
@@ -179,8 +207,10 @@
         </span>
       </div>
 
-      <h1 class="hero-title">sladokacs ✮⋆˙</h1>
-      <p class="hero-subtitle">Привет! Я начинающий стример Куся, а ты солнышко! ☀️</p>
+      <div class="cloud-title-wrap">
+        <h1 class="hero-title">sladokacs</h1>
+      </div>
+      <p class="hero-subtitle">Привет! Я начинающий стример, а ты солнышко! ☀️</p>
 
       <div class="hero-tags">
         <span class="tag">🎯 Counter-Strike 2</span>
@@ -209,10 +239,57 @@
           Telegram-канал
         </a>
       </div>
+
+      <!-- Цели на канале с оригинальными рисованными SVG-иконками с Твича Куси -->
+      <div class="goals-grid">
+        <div class="goal-card">
+          <div class="goal-top-row">
+            <div class="goal-svg-icon">
+              <svg viewBox="0 0 140 140" fill="none" role="img" aria-label="Сердечко цели фолловеров" xmlns="http://www.w3.org/2000/svg">
+                <path d="M56.4711 13.0628C55.5745 12.8097 54.6426 13.3313 54.3895 14.2279C54.1365 15.1244 54.6581 16.0563 55.5547 16.3094C60.2472 17.634 64.4967 18.5078 68.6424 20.4582C72.534 22.2891 75.6537 25.137 77.8511 28.8389C79.7277 32.0004 81.4048 35.334 82.3583 38.7368C82.6135 39.6476 82.5269 41.0934 83.2437 41.7181C83.8525 42.2489 84.6662 42.5919 85.4423 42.1987C86.0597 41.8859 86.43 41.2081 86.3658 40.5194L86.3656 40.5169C86.28 39.5955 85.8556 38.7149 85.6067 37.8266C84.5383 34.0139 82.6943 30.3891 80.7521 27.117C78.2136 22.8404 74.586 19.5263 70.0785 17.4057C65.5984 15.298 60.8701 14.3045 56.4711 13.0628Z" fill="#ffa3ee"></path>
+                <path d="M112.564 30.9801C118.57 30.4665 126.53 33.9603 130.858 38.1742C137.023 44.1764 137.64 54.7386 134.33 62.6765C129.386 74.5313 114.282 84.794 103.193 91.2047L103.189 91.2069C98.239 94.0687 93.828 97.619 89.0352 100.692C84.6746 103.488 80.0286 105.756 75.6354 108.477C73.0647 110.069 68.6145 111.713 67.4195 112.263C66.2246 112.812 65.3591 114.018 66.2246 115.055C66.8415 115.794 67.8131 115.772 68.6237 115.422C71.4538 114.201 74.8057 112.959 77.4115 111.345C81.8193 108.615 86.4806 106.337 90.8561 103.532C95.5957 100.493 99.9515 96.9745 104.847 94.1456C116.55 87.3827 132.229 76.4791 137.443 63.975C141.278 54.7793 140.351 42.7078 133.211 35.757C128.182 30.8605 119.25 27.0225 112.276 27.6189C111.348 27.6982 110.66 28.515 110.739 29.4432C110.819 30.3714 111.636 31.0595 112.564 30.9801Z" fill="#ffa3ee"></path>
+                <path d="M52.6472 14.0087C65.8703 16.3228 76.6141 29.7112 80.3331 36.1161C86.0493 31.915 99.8372 23.8434 109.259 25.1657C121.036 26.8186 129.507 33.6368 131.986 43.5541C134.465 53.4715 136.325 66.9012 117.73 80.5375C102.854 91.4466 77.6471 106.295 66.9034 112.356L47.0687 88.3888L39.4241 100.579C37.5646 100.028 31.6968 98.0169 23.1017 94.3805C12.3579 89.8351 6.15963 85.4962 3.47368 80.5375C0.787732 75.5789 1.20095 66.9012 7.6059 62.3558C12.7299 58.7194 21.9998 61.2538 26.2009 63.1822L28.0604 59.2566C27.4406 58.1547 25.8703 55.207 24.548 52.2318C22.8951 48.5128 20.4158 42.1079 23.1017 31.7773C25.7877 21.4467 36.1183 11.1162 52.6472 14.0087Z" fill="white"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M37.7307 16.6759C34.4075 18.9151 30.561 21.1725 28.0251 24.2767C21.1387 32.7099 21.1669 43.7792 25.3743 54.2979C26.7426 56.774 28.0036 59.5 28.0036 59.5C28.0036 59.5 30.3662 55.1496 32 53.5C33.2587 52.0504 34.6718 50.9921 34.6718 50.9921C33.9045 49.6878 31.5445 45.9603 30.8567 43.6607C29.2845 38.404 28.6243 33.5558 30.8594 28.2682C32.5673 24.7722 35.3406 21.6474 38.1394 18.9806C39.9511 17.2544 42.1098 15.6616 42.1098 15.6616C42.1098 15.6616 39.1474 15.7211 37.7307 16.6759ZM9.05117 60.4334C2.25739 61.9561 -0.666404 73.1119 2.30738 78.6844C3.92431 81.7144 5.94627 84.3824 8.91068 86.3175C10.9603 87.6552 13.0599 88.7767 15.271 89.8369C19.4562 91.844 23.7825 93.0145 28.0036 94.9871C31.7617 96.7436 35.4386 98.2938 39.2173 100.166L43.5561 95.207C43.5561 95.207 41.49 93.9673 40.2408 93.2257C37.8983 91.8352 35.2816 90.8891 32.8115 89.7452C27.7398 87.3947 22.8986 84.5833 17.8322 82.2619C13.2605 80.1679 7.10763 72.6977 8.2256 67.1078C8.58598 65.3059 9.51778 64.2523 10.9115 63.3888C12.2037 62.1862 16.49 61.5293 16.49 61.5293C14.2354 61.2765 11.1922 59.9537 9.05117 60.4334ZM49.8798 80.1747C49.3334 81.6525 48.8108 84.6673 47.704 85.7741C47.1937 86.2844 47.1391 86.4574 47.2569 87.1933C47.5971 89.3214 49.5154 91.576 50.9422 93.1714C54.4115 97.0525 58.0063 100.907 61.3199 104.921C61.9899 105.733 67.5 112 67.5 112C67.5 112 72 109.5 74.1346 108.017C74.1346 108.017 72.2449 105.32 70.6903 103.457C67.1822 99.2514 63.7933 94.9338 60.4032 90.6324C57.8039 87.3333 55.1458 84.0379 52.2329 81.0076C50.8889 79.6096 50.1815 79.3592 49.8798 80.1747Z" fill="black"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M46.7587 12.0695C28.0604 13.4811 16 30 21.3292 48.2029C22.1501 51.4808 24.5 57 25.8934 60.0686C25.6757 61.3579 25.6135 61.3806 23.9153 60.7903C19.059 59.1018 12.4137 57.7619 7.57775 60.1852C3.22259 62.3672 0.955446 65.7911 0.262678 71.2322C-0.281949 75.5112 -0.0404205 77.2345 1.56392 80.5103C3.63395 84.7372 5.70709 86.7634 11.6269 90.3456C19.1068 94.8726 27.2309 97.5186 35.1885 100.991C39.1413 102.716 39.7841 102.789 40.8504 101.633C41.5835 100.839 42.8874 98.7626 44.1725 96.3434C45.6114 93.6347 46.9723 91.2816 47.0998 91.2814C49.5 95.5 62.0692 109.562 64.424 112.295C65.3449 113.184 66.2523 113.501 67.4533 113.34C69.1231 113.117 71.5231 112.019 75.0644 109.861C79.2253 107.324 83.3969 104.807 87.5105 102.194C93.19 98.5859 98.8615 94.9546 104.586 91.4192C110.609 87.6938 116.6 83.5046 122.172 79.1165C124.848 77.0093 128.405 73.5358 129.403 72.0554C134.857 63.9682 136.476 54.1697 134.045 44.6608C132.282 37.7682 128.209 31.973 122.113 27.686C121.159 27.0152 118.064 25.5189 116.593 25.0176C110.411 22.9106 104.236 22.6491 97.9266 24.3695C92.2838 25.9077 87.1361 28.6964 82.6836 32.4344C81.7607 33.2094 80.9181 33.8435 80.8113 33.8435C78.0529 30 75.5727 27.0726 74.8454 26.2265C68.981 19.4042 64.1709 15.8464 57.6136 13.4811C54.7436 12.4458 49.5893 11.7755 46.7587 12.0695Z" fill="#323239"></path>
+              </svg>
+            </div>
+            <div class="goal-info">
+              <div class="goal-header">
+                <span class="goal-title">сделаю розыгрыш скинов :3</span>
+                <span class="goal-count"><strong>560</strong> / 1000 Фолловеры</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 56%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="goal-card">
+          <div class="goal-top-row">
+            <div class="goal-svg-icon">
+              <svg viewBox="0 0 140 140" fill="none" role="img" aria-label="Звездочка цели подписчиков" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M81.2614 3.01829C82.1823 2.33556 83.4693 2.54661 84.136 3.48969C86.8828 7.37519 88.203 11.8591 89.3215 16.0206C91.4396 23.9018 95.2547 32.4824 95.5367 40.6887C104.506 40.4633 114.886 41.7904 123.376 44.5765C125.581 45.3002 127.709 45.998 129.832 46.5398C131.729 47.024 133.726 47.4766 135.77 48.459C136.845 48.9755 137.25 50.2245 136.918 51.32C136.265 53.4789 134.074 55.6357 132.502 57.178C128.371 61.2284 123.258 65.9557 118.033 68.8968C112.47 72.0279 106.993 75.385 101.452 78.5805C101.452 78.5805 101.839 80.3741 101.997 81.2809C102.582 84.6413 102.558 87.9377 102.521 91.3305C102.454 97.6147 101.383 103.749 101.221 109.995C101.136 113.265 100.474 118.611 100.237 119.805C100 121 99.7114 121.765 98.7187 122.074C96.8879 122.645 95.5 121 96.0676 118.831C96.6352 116.662 97.0294 112.902 97.1056 109.86C97.2601 103.693 98.3315 97.6432 98.401 91.4412C98.4444 87.5706 98.5288 83.7456 97.5483 79.9573C97.1661 78.4801 96.7416 76.4397 98.1648 75.3736C103.418 71.4391 110.259 68.4617 116.05 65.202C120.752 62.5548 125.524 58.1833 129.654 54.1328C129.649 54.1383 129.669 54.1161 129.711 54.0702C130.484 53.2257 131.243 52.3659 131.96 51.4722C131.013 51.1736 130.006 50.9294 128.836 50.6309C126.582 50.0554 124.369 49.3299 122.159 48.6047C113.736 45.8409 103.482 44.6281 94.5977 44.9349C93.9115 45.1213 93.1959 45.0625 92.6033 44.6351C91.5532 43.8778 91.4631 42.0498 91.4222 40.8375C91.1577 32.9977 87.375 24.6667 85.352 17.1394C84.231 12.9684 83.0652 9.16485 80.8011 5.96207C80.1344 5.01899 80.3405 3.70102 81.2614 3.01829Z" fill="#ffa3ee"></path>
+                <path d="M33 51L20 32L56 37L79.5 5L92 44.5L110.5 47.5L131.5 53L115.5 63.5L96.5133 74C96.7689 77.2308 97.1268 86.7836 96.5133 96.4237C95.8998 106.064 93.7014 115.11 92.6789 118.428L68 90L62.2597 91.7084C64.4751 99.7418 68.5992 115.966 67.3722 116.595C66.1452 117.223 50.6575 108.541 43.5 104L22.5 122L21.5 93L3 75.5L27.5 70L33 51Z" fill="white"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M57.4228 31.8621C65.5314 19.7115 76.2901 5.18175 78.9461 2.79395C79.8825 1.95241 80.1974 1.84229 80.7219 2.17312C81.3285 2.55576 85.1015 14.0504 87.7609 23.6194C90.0594 31.8894 91.6204 37.0403 92.8552 40.4279C93.3919 41.9009 93.8313 43.1217 93.8313 43.141C93.8313 43.1603 95.0232 43.241 96.4799 43.3209C103.849 43.7239 120.249 46.9075 128.545 49.5454C132.211 50.711 132.616 51.0474 132.928 53.1843C133.08 54.2268 133.055 54.2923 132.224 55.0737C128.949 58.1505 117.16 65.4756 108.486 69.8217C107.574 70.2788 105.585 71.3938 104.065 72.2995C102.545 73.2054 100.762 74.1714 100.103 74.4464C99.4429 74.7213 98.8016 75.0214 98.6776 75.1132C98.5361 75.2181 98.4894 76.6437 98.5523 78.9441C98.7689 86.8822 98.6328 93.2938 98.1342 98.6447C96.8881 112.012 95.4989 119.543 94.0729 120.662C92.6307 121.793 90.426 120.523 87.1766 116.689C84.732 113.805 78.9516 107.29 76.1501 104.262C73.3834 101.271 69.1432 95.9025 67.9951 93.9361C67.4183 92.9483 66.8715 92.1402 66.7799 92.1402C66.6278 92.1402 64.5006 93.0242 64.3498 93.15C64.3139 93.1798 64.7501 94.5545 65.319 96.2048C66.2462 98.8943 70.1399 113.954 70.5207 116.323C70.6268 116.983 70.5563 117.57 70.2862 118.274C69.505 120.309 68.2183 120.46 64.7258 118.923C57.575 115.776 50.3688 111.558 44.9778 107.363C44.2058 106.762 43.445 106.272 43.2872 106.275C42.7985 106.282 38.5091 110.107 32.7444 115.678C26.9664 121.261 26.5765 121.616 24.6129 123.084C21.9551 125.071 20.7182 123.763 19.8887 118.086C18.9638 111.759 18.9266 103.276 19.7972 97.204L20.1484 94.7541L17.8244 92.4195C16.5461 91.1354 13.2873 88.0083 10.5823 85.47C7.87759 82.932 4.99749 80.0945 4.18217 79.1643C3.36708 78.2342 2.38608 77.2628 2.00266 77.0058C1.07463 76.3836 0.755675 75.4768 1.1941 74.7081C1.96727 73.3525 2.89777 73.0663 15.2292 70.3919C24.4849 68.3842 25.7717 68.0583 25.9929 67.6654C26.0905 67.4916 26.485 66.1005 26.8691 64.5742C27.7202 61.193 28.7862 57.7071 30.0726 54.0998L31.0403 51.385L29.0623 49.2776C25.7163 45.7125 21.8309 40.5206 19.512 36.5161C17.5764 33.1733 17.2451 31.8659 18.1014 30.9512C18.5071 30.5179 18.7941 30.4602 20.5483 30.4602C24.1914 30.4602 30.3506 31.069 38.9433 32.2781C42.2169 32.7388 52.109 34.5542 53.4838 34.9465C55.0616 35.3967 55.0666 35.3928 57.4228 31.8621Z" fill="#323239"></path>
+              </svg>
+            </div>
+            <div class="goal-info">
+              <div class="goal-header">
+                <span class="goal-title">спасибо! спасибо! спасибо!</span>
+                <span class="goal-count"><strong>21</strong> / 40 Подписчики</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 52.5%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- РАСПИСАНИЕ СТРИМОВ -->
-    <div class="schedule-bar">
+    <div class="schedule-bar kawaii-box">
       <div class="schedule-info">
         <span class="schedule-icon">⏰</span>
         <div>
@@ -224,14 +301,32 @@
       </div>
     </div>
 
-    <!-- СЕКЦИЯ 1: ВСЕ ССЫЛКИ С ФИРМЕННЫМИ ИКОНКАМИ -->
+    <!-- СЕКЦИЯ 1: ВСЕ ССЫЛКИ + КАРТИНКИ-ПАНЕЛИ КУСИ -->
     <section id="links" class="section">
       <div class="section-header">
-        <h2 class="section-title"><span class="bow">୨୧</span> Все мои ссылки</h2>
-        <span class="section-subtitle">Соцсети, игровые профили, поддержка и вишлисты</span>
+        <div class="cloud-badge">
+          <h2 class="section-title"><span class="bow">୨୧</span> Все мои ссылки</h2>
+        </div>
+        <span class="section-subtitle">Соцсети, игровые профили, поддержка и вишлисты ✦</span>
       </div>
 
-      <div class="links-category-title">Социальные сети и Контент</div>
+      <!-- Витрина оригинальных карточек-панелей с Твича Куси -->
+      <div class="panels-showcase">
+        <a href="https://t.me/sladokacs" target="_blank" rel="noopener noreferrer" class="panel-art-card">
+          <img src="assets/panels/panel-links.png" alt="Соцсети Куси sladokacs" loading="lazy" />
+          <span class="panel-art-caption">୨୧ СОЦСЕТИ КУСИ</span>
+        </a>
+        <a href="https://www.donationalerts.com/r/slad0kacs" target="_blank" rel="noopener noreferrer" class="panel-art-card">
+          <img src="assets/panels/panel-donate.png" alt="Ссылки для донатов sladokacs" loading="lazy" />
+          <span class="panel-art-caption">୨୧ ССЫЛКИ ДЛЯ ДОНАТОВ</span>
+        </a>
+        <a href="https://t.me/Anonroll_bot?start=5539874736" target="_blank" rel="noopener noreferrer" class="panel-art-card">
+          <img src="assets/panels/panel-anon.png" alt="Анонимное сообщение для Куси" loading="lazy" />
+          <span class="panel-art-caption">୨୧ АНОНИМНОЕ СООБЩЕНИЕ</span>
+        </a>
+      </div>
+
+      <div class="links-category-title">✦ Социальные сети и Контент</div>
       <div class="links-grid">
         <!-- Telegram -->
         <a href="https://t.me/sladokacs" target="_blank" rel="noopener noreferrer" class="link-card">
@@ -307,29 +402,14 @@
             </div>
             <div>
               <span class="link-name">୨୧ INSTAGRAM</span>
-              <span class="link-desc">@sladokacs</span>
-            </div>
-          </div>
-          <span class="link-arrow">↗</span>
-        </a>
-
-        <a href="https://www.instagram.com/foxywoxo/" target="_blank" rel="noopener noreferrer" class="link-card">
-          <div class="link-card-left">
-            <div class="link-icon icon-instagram">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
-              </svg>
-            </div>
-            <div>
-              <span class="link-name">୨୧ INSTAGRAM</span>
-              <span class="link-desc">@foxywoxo</span>
+              <span class="link-desc">@sladokacs / @foxywoxo</span>
             </div>
           </div>
           <span class="link-arrow">↗</span>
         </a>
 
         <!-- Threads -->
-        <a href="https://www.threads.com/@foxywoxo" target="_blank" rel="noopener noreferrer" class="link-card">
+        <a href="https://www.threads.com/@foxywoxo?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" class="link-card">
           <div class="link-card-left">
             <div class="link-icon icon-threads">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -373,14 +453,14 @@
             </div>
             <div>
               <span class="link-name">୨୧ АНОНИМКА</span>
-              <span class="link-desc">Написать мне анонимное сообщение</span>
+              <span class="link-desc">Написать мне анонимное сообщение 🤍</span>
             </div>
           </div>
           <span class="link-arrow">↗</span>
         </a>
       </div>
 
-      <div class="links-category-title">Игровые профили (CS2 & Игры)</div>
+      <div class="links-category-title">✦ Игровые профили (CS2 & Игры)</div>
       <div class="links-grid">
         <!-- Steam -->
         <a href="https://steamcommunity.com/id/sladokaebet/" target="_blank" rel="noopener noreferrer" class="link-card">
@@ -454,7 +534,7 @@
         </a>
       </div>
 
-      <div class="links-category-title">Поддержка, Донаты и Вишлисты</div>
+      <div class="links-category-title">✦ Поддержка, Донаты и Вишлисты</div>
       <div class="links-grid">
         <!-- DonationAlerts -->
         <a href="https://www.donationalerts.com/r/slad0kacs" target="_blank" rel="noopener noreferrer" class="link-card">
@@ -483,7 +563,7 @@
             </div>
             <div>
               <span class="link-name">୨୧ DALINK</span>
-              <span class="link-desc">Альтернативная ссылка для доната</span>
+              <span class="link-desc">Погладь котенка (донат вне стрима)</span>
             </div>
           </div>
           <span class="link-arrow">↗</span>
@@ -521,7 +601,7 @@
             </div>
             <div>
               <span class="link-name">୨୧ MY WISHLIST</span>
-              <span class="link-desc">Мой список желаний на OhMyWishes</span>
+              <span class="link-desc">Мой список желаний (обновлено 23.10)</span>
             </div>
           </div>
           <span class="link-arrow">↗</span>
@@ -537,7 +617,7 @@
             </div>
             <div>
               <span class="link-name">୨୧ STEAM WISHLIST</span>
-              <span class="link-desc">Желанные игры для прохождения</span>
+              <span class="link-desc">Желанные игры (обновлено 23.10)</span>
             </div>
           </div>
           <span class="link-arrow">↗</span>
@@ -556,48 +636,309 @@
             </div>
             <div>
               <span class="link-name">ДЛЯ КЫРГЫЗСТАНА ня!</span>
-              <span class="link-desc">Нажмите, чтобы открыть QR и реквизиты</span>
+              <span class="link-desc">Открыть QR-код O!Деньги</span>
             </div>
           </div>
           <span class="link-arrow">↗</span>
         </a>
       </div>
+
+      <!-- Баннер "Погладь котенка" (DALink) и QR для Кыргызстана -->
+      <div class="cute-banners-row">
+        <a href="https://dalink.to/slad0kacs" target="_blank" rel="noopener noreferrer" class="pixel-banner-card">
+          <img src="assets/panels/panel-dalink.png" alt="Для донатов вне стрима — Погладь котенка" loading="lazy" />
+          <div class="pixel-banner-text">
+            <h4>🐾 Погладь котенка!</h4>
+            <p>Для донатов вне стрима через <strong>DALink</strong> — котик скажет мяу 💗</p>
+          </div>
+        </a>
+
+        <div class="pixel-banner-card kg-preview-card" id="open-kg-card" role="button" tabindex="0">
+          <img src="assets/panels/panel-kg.png" alt="ДЛЯ ЖИТЕЛЕЙ КЫРГЫЗСТАНА ня! QR" loading="lazy" />
+          <div class="pixel-banner-text">
+            <h4>🇰🇬 ДЛЯ ЖИТЕЛЕЙ КЫРГЫЗСТАНА ня!</h4>
+            <p>Нажмите на карточку, чтобы увеличить QR-код <strong>O!Деньги</strong></p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- СЕКЦИЯ 2: ОБО МНЕ & FAQ -->
+    <!-- СЕКЦИЯ 2: МЕНЮ ДОНАТОВ, ПРИКОЛЮХИ И АЛЕРТЫ -->
+    <section id="donate-menu" class="section">
+      <div class="section-header">
+        <div>
+          <div class="cloud-badge">
+            <h2 class="section-title"><span class="bow">୨୧</span> Меню донатов & Алерты</h2>
+          </div>
+          <p class="section-subtitle">РАЗЛИЧНЫЕ КАРТИНКИ НА: 10+ 100+ 250+ 350+ 450+ 550+ 750+ 850+ 1000+ р. • Указывайте опцию в описании к донату ♡</p>
+        </div>
+
+        <div class="filter-tabs">
+          <button class="tab-btn active" data-filter="all">Все</button>
+          <button class="tab-btn" data-filter="menu">♥ Меню донатов</button>
+          <button class="tab-btn" data-filter="fun">✨ Приколюхи</button>
+          <button class="tab-btn" data-filter="alerts">👻 Скримеры и Алерты</button>
+        </div>
+      </div>
+
+      <div class="donate-grid">
+        <!-- Игровое меню -->
+        <div class="donate-item" data-category="menu">
+          <div>
+            <div class="donate-title">♥ Поставить вашу песню</div>
+            <div class="donate-note">Трек вне очереди на стриме</div>
+          </div>
+          <span class="donate-price">69 ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="menu">
+          <div>
+            <div class="donate-title">♥ Оценить ваш профиль в Steam</div>
+            <div class="donate-note">Разбор оформления и витрин</div>
+          </div>
+          <span class="donate-price">99 ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="menu">
+          <div>
+            <div class="donate-title">♥ Сыграть 1×1</div>
+            <div class="donate-note">Дуэль со мной в CS2</div>
+          </div>
+          <span class="donate-price">200 ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="menu">
+          <div>
+            <div class="donate-title">♥ Поиграть со мной 1 игру</div>
+            <div class="donate-note">Слот в пати на одну катку</div>
+          </div>
+          <span class="donate-price">250 ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="menu">
+          <div>
+            <div class="donate-title">♥ ЛЮБОЙ ЧЕЛЛЕНДЖ на 1 игру</div>
+            <div class="donate-note">Указать челлендж в описании к донату</div>
+          </div>
+          <span class="donate-price">250 ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="menu">
+          <div>
+            <div class="donate-title">♥ Сигна на бумажке</div>
+            <div class="donate-note">С вашим ником и сердечком</div>
+          </div>
+          <span class="donate-price">444 ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="menu">
+          <div>
+            <div class="donate-title">♥ Разбор демки зрителя</div>
+            <div class="donate-note">Я 12 авг игрок, чего-то крутого от меня не ждите лол</div>
+          </div>
+          <span class="donate-price">500 ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="menu">
+          <div>
+            <div class="donate-title">♥ Говорить демоническим голосом 5 минут</div>
+            <div class="donate-note">Включаю войсчейнджер на 5 минут</div>
+          </div>
+          <span class="donate-price">500 ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="menu">
+          <div>
+            <div class="donate-title">♥ Добавить в друзья</div>
+            <div class="donate-note">В друзья в Steam</div>
+          </div>
+          <span class="donate-price">500 ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="menu">
+          <div>
+            <div class="donate-title">♥ Продлить стрим (не больше 3 часов)</div>
+            <div class="donate-note">Продление трансляции</div>
+          </div>
+          <span class="donate-price">1 000 ₽/час</span>
+        </div>
+
+        <div class="donate-item" data-category="menu">
+          <div>
+            <div class="donate-title">♥ Не материться весь стрим</div>
+            <div class="donate-note">Режим максимальной пай-девочки</div>
+          </div>
+          <span class="donate-price">2 000 ₽</span>
+        </div>
+
+        <div class="donate-item highlight" data-category="menu">
+          <div>
+            <div class="donate-title">♥ Куся, заканчивай стрим</div>
+            <div class="donate-note">Моментальный офлайн</div>
+          </div>
+          <span class="donate-price">10 000 ₽</span>
+        </div>
+
+        <div class="donate-item highlight" data-category="menu">
+          <div>
+            <div class="donate-title">♥ 24 часа стрим</div>
+            <div class="donate-note">Суточный марафон</div>
+          </div>
+          <span class="donate-price">30 000 ₽</span>
+        </div>
+
+        <!-- Приколюхи -->
+        <div class="donate-item" data-category="fun">
+          <div>
+            <div class="donate-title">♥ Зачитать наизусть стихотворение</div>
+            <div class="donate-note">Какое-нибудь стихотворение на стриме</div>
+          </div>
+          <span class="donate-price">400 ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="fun">
+          <div>
+            <div class="donate-title">♥ Заказать мне пиццу</div>
+            <div class="donate-note">На ваш выбор!</div>
+          </div>
+          <span class="donate-price">900 ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="fun">
+          <div>
+            <div class="donate-title">♥ Вы выбираете фильм для просмотра на стриме</div>
+            <div class="donate-note">Смотрим вместе на стриме</div>
+          </div>
+          <span class="donate-price">1 444 ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="fun">
+          <div>
+            <div class="donate-title">♥ Назвать следующий стрим в честь донатера</div>
+            <div class="donate-note">Ваш ник в заголовке трансляции</div>
+          </div>
+          <span class="donate-price">1 999 ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="fun">
+          <div>
+            <div class="donate-title">♥ Называю вас впредь так, как вы пожелаете</div>
+            <div class="donate-note">Персональное обращение</div>
+          </div>
+          <span class="donate-price">9 999 ₽</span>
+        </div>
+
+        <div class="donate-item highlight" data-category="fun">
+          <div>
+            <div class="donate-title">♥ Связать вам шерстяной свитер</div>
+            <div class="donate-note">Доставка отдельно, дизайн обсуждается</div>
+          </div>
+          <span class="donate-price">35 000 ₽</span>
+        </div>
+
+        <div class="donate-item highlight" data-category="fun">
+          <div>
+            <div class="donate-title">🗑️ Удаляю CS на полгода</div>
+            <div class="donate-note">Прощай, Counter-Strike 2</div>
+          </div>
+          <span class="donate-price">500 000 ₽</span>
+        </div>
+
+        <!-- Спец-алерты и скримеры -->
+        <div class="donate-item" data-category="alerts">
+          <div>
+            <div class="donate-title">👻 СКРИМЕРЫ НА СТРИМЕ</div>
+            <div class="donate-note">Напугать Кусю в прямом эфире</div>
+          </div>
+          <span class="donate-price">66 / 666 / 6666 ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="alerts">
+          <div>
+            <div class="donate-title">💥 ВЗРЫВ ТНТ</div>
+            <div class="donate-note">Специальный эффект на экране</div>
+          </div>
+          <span class="donate-price">1 222+ ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="alerts">
+          <div>
+            <div class="donate-title">😍 ЭМОДЗИ ЛЮБИМКИ</div>
+            <div class="donate-note">Кастомный алерт на экране</div>
+          </div>
+          <span class="donate-price">1 500+ ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="alerts">
+          <div>
+            <div class="donate-title">🪙 ДОЖДЬ ИЗ МОНЕТОК</div>
+            <div class="donate-note">Специальный эффект на экране</div>
+          </div>
+          <span class="donate-price">2 000+ ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="alerts">
+          <div>
+            <div class="donate-title">👾 ГЛЮК СИСТЕМЫ (NEW)</div>
+            <div class="donate-note">Новый спец-эффект на стриме</div>
+          </div>
+          <span class="donate-price">3 000+ ₽</span>
+        </div>
+
+        <div class="donate-item" data-category="alerts">
+          <div>
+            <div class="donate-title">💸 ДЕНЕЖНЫЙ ВОДОПАД</div>
+            <div class="donate-note">Мощный визуальный алерт</div>
+          </div>
+          <span class="donate-price">5 000+ ₽</span>
+        </div>
+
+        <div class="donate-item highlight" data-category="alerts">
+          <div>
+            <div class="donate-title">🕷️ ТОБИ МАГУАЙР (NEW)</div>
+            <div class="donate-note">Легендарный танец на весь стрим</div>
+          </div>
+          <span class="donate-price">10 000+ ₽</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- СЕКЦИЯ 3: ОБО МНЕ & FAQ -->
     <section id="about" class="section">
       <div class="section-header">
-        <h2 class="section-title"><span class="bow">✮⋆˙</span> Немного обо мне & F.A.Q</h2>
+        <div class="cloud-badge">
+          <h2 class="section-title"><span class="bow">✮⋆˙</span> НЕМНОГО ОБО МНЕ & F.A.Q <span class="bow">✮⋆˙</span></h2>
+        </div>
       </div>
 
       <div class="about-faq-grid">
-        <div class="about-card">
+        <div class="about-card kawaii-box">
           <h3>Кто такая Куся? 🌸</h3>
           <ul class="bio-list">
             <li>
-              <span class="bio-badge">🎀</span>
-              <span>Меня зовут <strong>Куся</strong> (sladokacs)</span>
+              <span class="bio-badge">⟡</span>
+              <span>Меня зовут <strong>Куся</strong></span>
             </li>
             <li>
-              <span class="bio-badge">🎂</span>
-              <span><strong>23 года</strong> | День рождения: <strong>12 июня</strong></span>
+              <span class="bio-badge">⟡</span>
+              <span><strong>23 года</strong> | 12.06</span>
             </li>
             <li>
-              <span class="bio-badge">🏔️</span>
+              <span class="bio-badge">⟡</span>
               <span>Живу в <strong>Бишкеке, Кыргызстан</strong></span>
             </li>
             <li>
-              <span class="bio-badge">🔫</span>
-              <span>Играю в КС <strong>1.5 года</strong> + прохожу соло-игры</span>
+              <span class="bio-badge">⟡</span>
+              <span>Играю в КС <strong>1.5 года</strong></span>
             </li>
             <li>
-              <span class="bio-badge">💌</span>
-              <span>Больше фактов обо мне — <a href="https://t.me/sladokacs/374" target="_blank" rel="noopener noreferrer" style="color: var(--pink-primary);">в этом посте ТГ</a></span>
+              <span class="bio-badge">⟡</span>
+              <span>Больше обо мне <a href="https://t.me/sladokacs/374" target="_blank" rel="noopener noreferrer" style="color: var(--pink-primary); font-weight: 700;">тут</a></span>
             </li>
           </ul>
 
           <div class="warning-pill">
-            ⚠️ ВНИМАНИЕ: Я РУГАЮСЬ МАТОМ !
+            ⟡ ВНИМАНИЕ: Я РУГАЮСЬ МАТОМ !
           </div>
         </div>
 
@@ -608,7 +949,7 @@
               <span class="faq-toggle">+</span>
             </button>
             <div class="faq-answer">
-              Честно, сама не знаю — просто милый никнейм, который хорошо прижился 💗
+              Честно сама не знаю, просто милый никнейм, который хорошо прижился 💗
             </div>
           </div>
 
@@ -618,7 +959,7 @@
               <span class="faq-toggle">+</span>
             </button>
             <div class="faq-answer">
-              Обычно я предпочитаю играть одна или со своими людьми, но вы можете купить слот на игру за баллы канала или донат (250 ₽). А ТОП-3 донатеров получают слоты на все катки со мной!
+              Обычно я предпочитаю играть одна или со своими людьми, но вы можете купить слот на игру за баллы канала или донат (250 ₽). А ТОП 3 донатеров получают слоты на все катки со мной!
             </div>
           </div>
 
@@ -628,13 +969,24 @@
               <span class="faq-toggle">+</span>
             </button>
             <div class="faq-answer">
-              Я не добавляю в друзья кого попало. В Steam попасть в друзья можно через донат, баллы канала или платную подписку, а вот на <a href="https://www.faceit.com/ru/players/SLAD0KA" target="_blank" rel="noopener noreferrer">Faceit</a> добавляю всех!)
+              Я не добавляю в друзья кого попало. В Steam попасть в друзья можно через донат, баллы канала или платную подписку, а вот на <a href="https://www.faceit.com/ru/players/SLAD0KA" target="_blank" rel="noopener noreferrer">Faceit</a> добавляю всех)
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question">
-              <span>⟡ Как работает система тикетов для сабов?</span>
+              <span>⟡ В какие игры играешь и когда стримы?</span>
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-answer">
+              Сейчас основная игра — CS2, посмотреть список моих игр вы можете <a href="https://t.me/sladokacs/401" target="_blank" rel="noopener noreferrer">тут</a>.<br/>
+              Стараюсь стримить каждый день <strong>17:00–21:00 по МСК</strong>, все анонсы закидываю в <a href="https://t.me/sladokacs" target="_blank" rel="noopener noreferrer">ТГ канал</a>.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>⟡ Как работает система тикетов?</span>
               <span class="faq-toggle">+</span>
             </button>
             <div class="faq-answer">
@@ -648,55 +1000,193 @@
       </div>
     </section>
 
-    <!-- СЕКЦИЯ 3: СЕТАП -->
+    <!-- СЕКЦИЯ 4: СЕТАП С ОРИГИНАЛЬНЫМ БАННЕРОМ "МОЙ СЕТАП" -->
     <section id="setup" class="section">
       <div class="section-header">
-        <h2 class="section-title"><span class="bow">୨୧</span> Мой игровой сетап</h2>
-        <span class="section-subtitle">Железо и девайсы, на которых я стримлю</span>
+        <div class="cloud-badge">
+          <h2 class="section-title"><span class="bow">୨୧</span> Мой игровой сетап</h2>
+        </div>
+        <span class="section-subtitle">Железо и девайсы, на которых я стримлю ✦</span>
       </div>
 
-      <div class="setup-grid">
-        <div class="setup-card">
-          <h3>🖥️ Компьютер (ПК)</h3>
-          <ul class="spec-list">
-            <li class="spec-item"><span class="spec-label">Корпус</span><span class="spec-val">Lian Li O11 Dynamic Mini Snow</span></li>
-            <li class="spec-item"><span class="spec-label">Видеокарта</span><span class="spec-val">RTX 3070 Bilibili Edition</span></li>
-            <li class="spec-item"><span class="spec-label">Процессор</span><span class="spec-val">AMD Ryzen 7 5800X</span></li>
-            <li class="spec-item"><span class="spec-label">Материнская плата</span><span class="spec-val">ASUS ROG Strix B550</span></li>
-            <li class="spec-item"><span class="spec-label">Оперативная память</span><span class="spec-val">G.Skill 32 ГБ DDR4 3800 МГц</span></li>
-            <li class="spec-item"><span class="spec-label">Охлаждение</span><span class="spec-val">СЖО Lian Li + ID-Cooling</span></li>
-            <li class="spec-item"><span class="spec-label">Блок питания</span><span class="spec-val">Cooler Master 850 Вт</span></li>
-            <li class="spec-item"><span class="spec-label">Накопитель</span><span class="spec-val">SSD 1 ТБ</span></li>
-          </ul>
+      <div class="setup-layout">
+        <div class="setup-banner-col">
+          <div class="panel-art-card lightbox-trigger" data-img="assets/panels/panel-setup.png" data-title="୨୧ МОЙ СЕТАП">
+            <img src="assets/panels/panel-setup.png" alt="Мой сетап — Куся sladokacs" loading="lazy" />
+            <span class="panel-art-caption">୨୧ МОЙ СЕТАП (нажмите для увеличения)</span>
+          </div>
         </div>
 
-        <div class="setup-card">
-          <h3>🎧 Периферия и Девайсы</h3>
-          <ul class="spec-list">
-            <li class="spec-item"><span class="spec-label">Мышь</span><span class="spec-val">Logitech G Pro X Superlight</span></li>
-            <li class="spec-item"><span class="spec-label">Клавиатура</span><span class="spec-val">Ducky One 3 SF White (Silent Red)</span></li>
-            <li class="spec-item"><span class="spec-label">Гарнитура</span><span class="spec-val">Logitech PRO X Lightspeed</span></li>
-            <li class="spec-item"><span class="spec-label">Основной монитор</span><span class="spec-val">AOC 25G3ZM/BK (240 Гц)</span></li>
-            <li class="spec-item"><span class="spec-label">Второй монитор</span><span class="spec-val">AOC (2nd) + кронштейн ONKRON G160</span></li>
-            <li class="spec-item"><span class="spec-label">Веб-камера</span><span class="spec-val">Logitech BRIO Stream Edition</span></li>
-            <li class="spec-item"><span class="spec-label">Колонки</span><span class="spec-val">Edifier G2000</span></li>
-          </ul>
+        <div class="setup-grid">
+          <div class="setup-card kawaii-box">
+            <h3>🖥️ ПК:</h3>
+            <ul class="spec-list">
+              <li class="spec-item"><span class="spec-label">Корпус</span><span class="spec-val">Lian Li O11 Dynamic Mini Snow</span></li>
+              <li class="spec-item"><span class="spec-label">Видеокарта</span><span class="spec-val">RTX 3070 Bilibili</span></li>
+              <li class="spec-item"><span class="spec-label">Процессор</span><span class="spec-val">AMD Ryzen 7 5800X</span></li>
+              <li class="spec-item"><span class="spec-label">Материнка</span><span class="spec-val">ASUS ROG Strix B550</span></li>
+              <li class="spec-item"><span class="spec-label">Система ВО</span><span class="spec-val">Lian Li</span></li>
+              <li class="spec-item"><span class="spec-label">Оперативка</span><span class="spec-val">G.Skill, 32 ГБ DDR4 3800 МГц</span></li>
+              <li class="spec-item"><span class="spec-label">Блок питания</span><span class="spec-val">Cooler Master, 850 Вт</span></li>
+              <li class="spec-item"><span class="spec-label">Накопитель</span><span class="spec-val">1 ТБ</span></li>
+              <li class="spec-item"><span class="spec-label">Вентиляторы</span><span class="spec-val">ID-Cooling</span></li>
+            </ul>
+          </div>
+
+          <div class="setup-card kawaii-box">
+            <h3>🎧 ПЕРИФЕРИЯ:</h3>
+            <ul class="spec-list">
+              <li class="spec-item"><span class="spec-label">Мышь</span><span class="spec-val">Logitech G Pro X Superlight</span></li>
+              <li class="spec-item"><span class="spec-label">Гарнитура</span><span class="spec-val">Logitech PRO X lightspeed</span></li>
+              <li class="spec-item"><span class="spec-label">Кронштейн</span><span class="spec-val">ONKRON G160 для двух мониторов</span></li>
+              <li class="spec-item"><span class="spec-label">Монитор (main)</span><span class="spec-val">АОС 25G3ZM/BK</span></li>
+              <li class="spec-item"><span class="spec-label">Монитор (2nd)</span><span class="spec-val">AOC</span></li>
+              <li class="spec-item"><span class="spec-label">Клава</span><span class="spec-val">Ducky One 3 SF White (Cherry MX RGB Silent Red)</span></li>
+              <li class="spec-item"><span class="spec-label">Вебка</span><span class="spec-val">Logitech BRIO stream edition</span></li>
+              <li class="spec-item"><span class="spec-label">Колонки</span><span class="spec-val">Edifier G2000</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- СЕКЦИЯ 5: ЗАЛ СЛАВЫ И КОМЬЮНИТИ С КАРТИНКАМИ КУСИ -->
+    <section id="community" class="section">
+      <div class="section-header">
+        <div>
+          <div class="cloud-badge">
+            <h2 class="section-title"><span class="bow">💗</span> Зал славы комьюнити</h2>
+          </div>
+          <p class="section-subtitle">ТОП 3 донатеров получают слоты на все катки со мной 💗 (*обновлено 25.10.2026)</p>
+        </div>
+      </div>
+
+      <!-- Подиум ТОП 3 + забавная карточка Куси из панели донатеров -->
+      <div class="top-donors-layout">
+        <div class="top-donor-photo panel-art-card lightbox-trigger" data-img="assets/panels/panel-top-donors.png" data-title="💗Спасибо за поддержку!">
+          <img src="assets/panels/panel-top-donors.png" alt="Куся благодарит донатеров" loading="lazy" />
+          <span class="panel-art-caption">💗 ЛЮБИМЫЕ МЕЦЕНАТЫ</span>
+        </div>
+
+        <div class="podium-and-cloud">
+          <div class="podium-grid">
+            <div class="podium-card rank-1">
+              <span class="podium-rank">♔ ТОП 1 ЛЕГЕНДА</span>
+              <div class="podium-name">Naokelovesadi</div>
+              <div class="podium-amount">50 061 хрустиков + ★ Falchion Knife | Doppler + ★ Hand Wraps | CAUTION! + скины и кейсы</div>
+            </div>
+
+            <div class="podium-card">
+              <span class="podium-rank">❣ ТОП 2 МЕЦЕНАТ</span>
+              <div class="podium-name">oxygenen</div>
+              <div class="podium-amount">20 555 хрустиков</div>
+            </div>
+
+            <div class="podium-card">
+              <span class="podium-rank">❣ ТОП 3 МЕЦЕНАТ</span>
+              <div class="podium-name">ariefudesu</div>
+              <div class="podium-amount">14 747 хрустиков + игры</div>
+            </div>
+          </div>
+
+          <!-- Остальные донатеры -->
+          <div class="donors-cloud kawaii-box">
+            <h3>Здесь могут быть представлены не все донатеры, но я безумно благодарна каждому, кто поддерживает меня 🤍</h3>
+            <div class="donors-pills">
+              <span class="donor-pill">❣ <strong>Piperoni</strong> — 8 666 хрустиков + logitech PRO X lightspeed</span>
+              <span class="donor-pill">♡ <strong>Аноним</strong> — 9 666 хрустиков</span>
+              <span class="donor-pill">♡ <strong>egoryanzy</strong> — 7 069 хрустиков + игра</span>
+              <span class="donor-pill">♡ <strong>Krildy</strong> — 3 657 хрустиков + игры</span>
+              <span class="donor-pill">♡ <strong>Trix</strong> — ★ Paracord Knife | Safari Mesh</span>
+              <span class="donor-pill">♡ <strong>Ulqua</strong> — 2 500 хрустиков</span>
+              <span class="donor-pill">♡ <strong>koreanman</strong> — 2 200 хрустиков</span>
+              <span class="donor-pill">♡ <strong>august26go</strong> — 1 999 хрустика</span>
+              <span class="donor-pill">♡ <strong>TUNTUN SAXUR1</strong> — 1 149 хрустиков</span>
+              <span class="donor-pill">♡ <strong>kaid_n1</strong> — 1 000 хрустиков</span>
+              <span class="donor-pill">♡ <strong>evseshas</strong> — 1 000 хрустиков</span>
+              <span class="donor-pill">♡ <strong>Япончик</strong> — 833 хрустика + скины</span>
+              <span class="donor-pill">♡ <strong>nirvana_mary</strong> — 700 хрустиков + игра</span>
+              <span class="donor-pill">♡ <strong>SiriusXXL</strong> — 500 хрустиков</span>
+              <span class="donor-pill">♡ <strong>no_riiiz</strong> — 468 хрустиков</span>
+              <span class="donor-pill">♡ <strong>DN_</strong> — 450 хрустиков + скин</span>
+              <span class="donor-pill">♡ <strong>trenertvs</strong> — 200 хрустиков</span>
+              <span class="donor-pill">♡ <strong>Knayz</strong> — 179 хрустиков</span>
+              <span class="donor-pill">♡ <strong>ДругДавида</strong> — 110 хрустиков</span>
+              <span class="donor-pill">♡ <strong>abrikosik_a</strong> — 100 хрустиков</span>
+              <span class="donor-pill">♡ <strong>zhkairbekov</strong> — игра</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Сабы (с картинкой Tier 1-3) и Рыцари канала (Модераторы) -->
+      <div class="community-bottom-grid">
+        <div class="comm-card kawaii-box subs-card-layout">
+          <div class="subs-art-wrap lightbox-trigger" data-img="assets/panels/panel-subs.png" data-title="💎 Бонусы подписок TIER 1 / TIER 2 / TIER 3">
+            <img src="assets/panels/panel-subs.png" alt="Подписчики Tier 1, Tier 2, Tier 3 и система тикетов" loading="lazy" />
+            <span class="zoom-hint">🔍 Нажмите, чтобы рассмотреть бонусы Tier 1–3</span>
+          </div>
+          <div class="subs-content-wrap">
+            <h3>💎 Платные подписчики (обновлено 25.10)</h3>
+            <p style="font-size: 0.86rem; color: var(--text-muted); margin-top: 4px;">
+              При выборе фильма, игры, сериала или другой активности каждый вариант попадает в барабан столько раз, сколько у автора тикетов (Tier 1 → 🎟️ 1, Tier 2 → 🎟️🎟️ 2, Tier 3 → 🎟️×5)
+            </p>
+            <div class="sub-tags">
+              <span class="sub-tag tier3">💎 TIER 3: ariefudesu</span>
+              <span class="sub-tag">🩷 1337h4xx0r5k11zz</span>
+              <span class="sub-tag">🩷 radar41k</span>
+              <span class="sub-tag">🩷 chortsukka</span>
+              <span class="sub-tag">🩷 sextermorgaan</span>
+              <span class="sub-tag">🩷 kiokiort</span>
+              <span class="sub-tag">🩷 miss_mod1</span>
+              <span class="sub-tag">🩷 shirkee_</span>
+              <span class="sub-tag">🩷 roflanlove</span>
+              <span class="sub-tag">🩷 nirvana_mary</span>
+              <span class="sub-tag">🩷 no_riiiz</span>
+              <span class="sub-tag">🩷 ariefudesu</span>
+              <span class="sub-tag">🩷 daniil_delusion</span>
+              <span class="sub-tag">🩷 chris133797</span>
+              <span class="sub-tag">🩷 faraon_hell</span>
+              <span class="sub-tag">🩷 mover_cs2</span>
+              <span class="sub-tag">🩷 serztula</span>
+              <span class="sub-tag">🩷 silversurf312</span>
+              <span class="sub-tag">🩷 bakaiskii</span>
+              <span class="sub-tag">🩷 razakov_08</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="comm-card kawaii-box mods-card-layout">
+          <div class="mods-banner-wrap lightbox-trigger" data-img="assets/panels/panel-mods.png" data-title="⚔️ РЫЦАРИ КАНАЛА — Хранители чатика">
+            <img src="assets/panels/panel-mods.png" alt="Рыцари канала — модераторы sladokacs" loading="lazy" />
+          </div>
+          <h3>⚔️ Рыцари канала (Хранители чатика) 🫂</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 6px;">
+            Отдельное спасибо моим самым лучшим хранителям чатика! Спасибо, что следите за порядком, поддерживаете нашу ламповую атмосферу и помогаете мне! Вы — важная часть этого маленького уютного комьюнити 💗
+          </p>
+          <div class="sub-tags" style="margin-top: 16px;">
+            <span class="mod-tag">⚔️ piperoni</span>
+            <span class="mod-tag">⚔️ egoryanzy</span>
+            <span class="mod-tag">⚔️ Naokelovesadi</span>
+            <span class="mod-tag">⚔️ ariefudesu</span>
+          </div>
         </div>
       </div>
     </section>
 
     <footer class="footer">
-      <p>Сделано с любовью для солнышки <strong>sladokacs (Куся)</strong> ☀️ ୨୧</p>
+      <p>Сделано с любовью для солнышек <strong>sladokacs (Куси)</strong> ☀️ ୨୧</p>
     </footer>
   </main>
 
-  <!-- Модальное окно для жителей Кыргызстана -->
+  <!-- Универсальное модальное окно для просмотра QR Кыргызстана и увеличения картинок-панелей -->
   <div class="modal-backdrop" id="kg-modal">
-    <div class="modal-content">
+    <div class="modal-content kawaii-frame">
       <button class="modal-close" id="close-kg-modal" aria-label="Закрыть">&times;</button>
-      <h3>🇰🇬 ДЛЯ ЖИТЕЛЕЙ КЫРГЫЗСТАНА ня!</h3>
+      <h3 id="modal-title">🇰🇬 ДЛЯ ЖИТЕЛЕЙ КЫРГЫЗСТАНА ня!</h3>
       <img
-        src="https://panels.twitch.tv/panel-1482964411-image-b0fb50b2-2260-4c99-b673-10275f399eca"
+        id="modal-img"
+        src="assets/panels/panel-kg.png"
         alt="Реквизиты для жителей Кыргызстана"
       />
     </div>

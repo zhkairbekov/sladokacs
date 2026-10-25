@@ -46,23 +46,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. Модальное окно для жителей Кыргызстана
+  // 4. Модальное окно для жителей Кыргызстана и лайтбокса картинок-панелей Куси
   const openKgBtn = document.getElementById('open-kg-modal');
+  const openKgCard = document.getElementById('open-kg-card');
   const closeKgBtn = document.getElementById('close-kg-modal');
   const kgModal = document.getElementById('kg-modal');
+  const modalTitle = document.getElementById('modal-title');
+  const modalImg = document.getElementById('modal-img');
 
-  if (openKgBtn && kgModal && closeKgBtn) {
+  function openModal(imgSrc, titleText) {
+    if (!kgModal || !modalImg || !modalTitle) return;
+    modalImg.src = imgSrc;
+    modalImg.alt = titleText;
+    modalTitle.textContent = titleText;
+    kgModal.classList.add('open');
+  }
+
+  if (openKgBtn) {
     openKgBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      kgModal.classList.add('open');
+      openModal('assets/panels/panel-kg.png', '🇰🇬 ДЛЯ ЖИТЕЛЕЙ КЫРГЫЗСТАНА ня!');
     });
+  }
 
+  if (openKgCard) {
+    openKgCard.addEventListener('click', () => {
+      openModal('assets/panels/panel-kg.png', '🇰🇬 ДЛЯ ЖИТЕЛЕЙ КЫРГЫЗСТАНА ня!');
+    });
+  }
+
+  document.querySelectorAll('.lightbox-trigger').forEach((trigger) => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const imgSrc = trigger.getAttribute('data-img');
+      const titleText = trigger.getAttribute('data-title') || '୨୧ SLADOKACS';
+      if (imgSrc) {
+        openModal(imgSrc, titleText);
+      }
+    });
+  });
+
+  if (closeKgBtn && kgModal) {
     closeKgBtn.addEventListener('click', () => {
       kgModal.classList.remove('open');
     });
 
     kgModal.addEventListener('click', (e) => {
       if (e.target === kgModal) {
+        kgModal.classList.remove('open');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
         kgModal.classList.remove('open');
       }
     });
