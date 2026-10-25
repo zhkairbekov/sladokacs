@@ -2,6 +2,8 @@
 
 Официальная страница-визитка для Twitch-стримерши **[sladokacs](https://www.twitch.tv/sladokacs)**
 
+🌐 **Сайт:** [https://kairbekoff-sladokacs.netlify.app/](https://kairbekoff-sladokacs.netlify.app/)
+
 ---
 
 ## 📁 Структура проекта
